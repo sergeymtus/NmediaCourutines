@@ -29,6 +29,7 @@ private val empty = Post(
     likes = 0
 )
 
+
 class PostViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: PostRepository =
         PostRepositoryImpl(AppDB.getInstance(context = application).postDao())
